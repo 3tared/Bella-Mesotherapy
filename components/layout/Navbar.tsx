@@ -13,6 +13,7 @@ import {
   type NavItem,
 } from "@/data/navigation";
 import { cn } from "@/lib/utils";
+import { useTheme } from "@/components/providers/ThemeProvider";
 
 function NavLink({
   href,
@@ -78,6 +79,76 @@ function LangSwitcher({ scrolled }: { scrolled: boolean }) {
       aria-label={t("ariaLangSwitch")}
     >
       {t("lang")}
+    </button>
+  );
+}
+
+function ThemeToggle({ scrolled }: { scrolled: boolean }) {
+  const { resolvedTheme, setTheme } = useTheme();
+  const isDark = resolvedTheme === "dark";
+
+  const toggle = () => setTheme(isDark ? "light" : "dark");
+
+  return (
+    <button
+      onClick={toggle}
+      className={cn(
+        "relative flex h-8 w-8 items-center justify-center rounded-full border transition-all duration-300",
+        scrolled
+          ? "border-bella-gold/30 text-bella-stone hover:border-bella-gold hover:text-bella-gold"
+          : "border-bella-charcoal/30 text-bella-stone hover:border-bella-gold hover:text-bella-gold dark:border-white/30 dark:text-white/70 dark:hover:border-white dark:hover:text-white",
+      )}
+      aria-label={isDark ? "Switch to light mode" : "Switch to dark mode"}
+    >
+      <AnimatePresence mode="wait" initial={false}>
+        {isDark ? (
+          <motion.svg
+            key="sun"
+            initial={{ rotate: -90, scale: 0, opacity: 0 }}
+            animate={{ rotate: 0, scale: 1, opacity: 1 }}
+            exit={{ rotate: 90, scale: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <circle cx="12" cy="12" r="5" />
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </motion.svg>
+        ) : (
+          <motion.svg
+            key="moon"
+            initial={{ rotate: 90, scale: 0, opacity: 0 }}
+            animate={{ rotate: 0, scale: 1, opacity: 1 }}
+            exit={{ rotate: -90, scale: 0, opacity: 0 }}
+            transition={{ duration: 0.25, ease: [0.25, 0.46, 0.45, 0.94] }}
+            xmlns="http://www.w3.org/2000/svg"
+            width="14"
+            height="14"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.5"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+          </motion.svg>
+        )}
+      </AnimatePresence>
     </button>
   );
 }
@@ -174,7 +245,8 @@ export function Navbar() {
               ))}
             </div>
 
-            <div className="hidden lg:block">
+            <div className="hidden items-center gap-3 lg:flex">
+              <ThemeToggle scrolled={scrolled} />
               <LangSwitcher scrolled={scrolled} />
             </div>
 
@@ -285,6 +357,7 @@ export function Navbar() {
                   isRTL ? "justify-end" : "justify-start",
                 )}
               >
+                <ThemeToggle scrolled />
                 <LangSwitcher scrolled />
                 <a
                   href={instagramUrl}
