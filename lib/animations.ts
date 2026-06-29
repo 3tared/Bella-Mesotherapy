@@ -1,4 +1,4 @@
-import { Variants } from "framer-motion";
+import type { Variants } from "motion/react";
 
 /* ── Fade up (section enter) ─────────────────────── */
 export const fadeUp: Variants = {
@@ -6,7 +6,7 @@ export const fadeUp: Variants = {
   visible: {
     opacity: 1,
     y:       0,
-    transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 0.8, ease: [0.25, 0.46, 0.45, 0.94] as const },
   },
 };
 
@@ -25,16 +25,7 @@ export const cardReveal: Variants = {
     opacity: 1,
     y:       0,
     scale:   1,
-    transition: { duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] },
-  },
-};
-
-/* ── Clip reveal (text wipe) ─────────────────────── */
-export const clipReveal: Variants = {
-  hidden:  { clipPath: "inset(0 100% 0 0)" },
-  visible: {
-    clipPath: "inset(0 0% 0 0)",
-    transition: { duration: 1.2, ease: [0.65, 0, 0.35, 1] },
+    transition: { duration: 0.9, ease: [0.25, 0.46, 0.45, 0.94] as const },
   },
 };
 
@@ -43,16 +34,6 @@ export const lineDraw: Variants = {
   hidden:  { scaleX: 0, originX: 0 },
   visible: {
     scaleX: 1,
-    transition: { duration: 1.0, ease: [0.65, 0, 0.35, 1] },
-  },
-};
-
-/* ── Image zoom ──────────────────────────────────── */
-export const imageZoom: Variants = {
-  hidden:  { scale: 1.1, opacity: 0 },
-  visible: {
-    scale:   1,
-    opacity: 1,
-    transition: { duration: 1.4, ease: [0.25, 0.46, 0.45, 0.94] },
+    transition: { duration: 1.0, ease: [0.65, 0, 0.35, 1] as const },
   },
 };

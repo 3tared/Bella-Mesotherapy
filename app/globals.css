@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+@config "../tailwind.config.ts";
+
 @layer base {
   :root {
     --font-cormorant: "Cormorant Garamond";
@@ -17,7 +20,19 @@
     --bella-mist:        #F2EFEA;
     --bella-stone:       #8B8680;
 
-    /* Semantic tokens */
+    /* Semantic brand tokens */
+    --brand-gold-decorative: #C9A96E;
+    /* #8A6A34 = 5.01:1 on white and 4.73:1 on ivory. */
+    --brand-gold-text:       #8A6A34;
+    --brand-gold-text-hover: #745421;
+
+    /* Semantic surface tokens */
+    --surface-dark:          #0A0A08;
+    --surface-dark-elevated: #222220;
+    --surface-dark-muted:    #171715;
+    --surface-overlay:       rgba(10, 10, 8, 0.78);
+    --text-on-dark-muted:    #92908C;
+
     --color-bg:          var(--bella-ivory);
     --color-surface:     #FFFFFF;
     --color-text:        var(--bella-charcoal);
@@ -40,6 +55,11 @@
     --color-text:       #F0EDE6;
     --color-text-muted: #7A7570;
     --color-border:     rgba(201, 169, 110, 0.15);
+  }
+
+  [data-surface="dark"] {
+    --brand-gold-text:       #D9BC82;
+    --brand-gold-text-hover: #E8CC91;
   }
 
   * {
@@ -89,7 +109,9 @@
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
     }
   }
 }
@@ -106,6 +128,18 @@
     border-color: var(--bella-gold);
   }
 
+  .text-brand-gold {
+    color: var(--brand-gold-text);
+  }
+
+  .hover-brand-gold:hover {
+    color: var(--brand-gold-text-hover);
+  }
+
+  .text-on-dark-muted {
+    color: var(--text-on-dark-muted);
+  }
+
   .will-change-transform {
     will-change: transform;
   }
@@ -118,4 +152,183 @@
     transform: translateZ(0);
     backface-visibility: hidden;
   }
+}
+
+/* RTL support */
+html[dir="rtl"] body {
+  font-family: var(--font-noto-sans-arabic), var(--font-dm-sans), system-ui, sans-serif;
+  line-height: 1.8;
+}
+
+html[dir="rtl"] .font-display {
+  font-family: var(--font-markazi), var(--font-cormorant), Georgia, serif !important;
+  line-height: 1.5 !important;
+}
+
+html[dir="rtl"] .tracking-wide:not(.font-accent),
+html[dir="rtl"] .tracking-wider:not(.font-accent),
+html[dir="rtl"] .tracking-widest:not(.font-accent),
+html[dir="rtl"] [class*="tracking-["]:not(.font-accent) {
+  letter-spacing: normal !important;
+}
+
+[dir="rtl"] .text-gradient-gold {
+  direction: rtl;
+}
+
+/* Flip horizontal gradient directions in RTL */
+[dir="rtl"] .bg-gradient-to-r {
+  background-image: linear-gradient(to left, var(--tw-gradient-stops));
+}
+
+[dir="rtl"] .bg-gradient-to-l {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+}
+
+/* RTL origin adjustments */
+[dir="rtl"] .origin-left {
+  transform-origin: right;
+}
+
+[dir="rtl"] .origin-right {
+  transform-origin: left;
+}
+
+/* RTL: TracingBeam — flip beam line to right side */
+[dir="rtl"] .tracing-beam-line {
+  left: auto;
+  right: 0;
+  transform-origin: right;
+}
+
+@theme inline {
+  --animate-shimmer-slide: shimmer-slide var(--speed) ease-in-out infinite alternate;
+  --animate-spin-around: spin-around calc(var(--speed) * 2) infinite linear;
+  --animate-shiny-text: shiny-text 8s infinite;
+  @keyframes shimmer-slide {
+  to {
+    transform: translate(calc(100cqw - 100%), 0);
+    }
+  }
+  @keyframes spin-around {
+  0% {
+    transform: translateZ(0) rotate(0);
+    }
+  15%, 35% {
+    transform: translateZ(0) rotate(90deg);
+    }
+  65%, 85% {
+    transform: translateZ(0) rotate(270deg);
+    }
+  100% {
+    transform: translateZ(0) rotate(360deg);
+    }
+  }
+  @keyframes shiny-text {
+  0%, 90%, 100% {
+    background-position: calc(-100% - var(--shiny-width)) 0;
+    }
+  30%, 60% {
+    background-position: calc(100% + var(--shiny-width)) 0;
+    }
+  }
+  --animate-marquee: marquee var(--duration) infinite linear;
+  --animate-marquee-vertical: marquee-vertical var(--duration) linear infinite;
+  /* Aceternity InfiniteMovingCards scroll animation */
+  --animate-scroll: scroll var(--animation-duration, 40s)
+    var(--animation-direction, forwards) linear infinite;
+  @keyframes marquee {
+  from {
+    transform: translateX(0);
+    }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes marquee-vertical {
+  from {
+    transform: translateY(0);
+    }
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+    }
+  }
+  @keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
+    }
+  }
+}
+
+/* Custom scrollbar utility for filter navigation */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@keyframes bella-marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes bella-marquee-reverse {
+  from {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-bella-marquee {
+  animation: bella-marquee var(--duration, 40s) linear infinite;
+}
+
+.animate-bella-marquee-reverse {
+  animation: bella-marquee-reverse var(--duration, 40s) linear infinite;
+}
+
+.yarl__container {
+  background: rgba(26, 26, 26, 0.97) !important;
+}
+
+.yarl__button {
+  color: rgba(250, 248, 245, 0.7) !important;
+  transition: color 0.2s ease !important;
+}
+
+.yarl__button:hover {
+  color: #C9A96E !important;
+}
+
+.yarl__thumbnails_thumbnail {
+  border-color: rgba(201, 169, 110, 0.2) !important;
+  transition: border-color 0.2s ease !important;
+}
+
+.yarl__thumbnails_thumbnail_active,
+.yarl__thumbnails_thumbnail:hover {
+  border-color: #C9A96E !important;
+}
+
+.yarl__slide_captions_container {
+  background: linear-gradient(to top, rgba(26, 26, 26, 0.9), transparent) !important;
 }

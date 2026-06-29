@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "title": "Bella | Luxury Mesotherapy",
+    "description": "Advanced mesotherapy formulations crafted for transformative skin renewal. Trusted by dermatologists across Egypt and the Gulf.",
+    "productsTitle": "Products | Bella Mesotherapy",
+    "productsDescription": "13 precision-formulated mesotherapy solutions for every skin concern.",
+    "ogAlt": "Bella luxury mesotherapy",
+    "keywords": ["mesotherapy", "luxury skincare", "Bella", "skin renewal", "advanced skincare", "hyaluronic acid", "peptides"]
+  },
+  "accessibility": {
+    "skipToContent": "Skip to main content"
+  },
+  "nav": {
+    "home":     "Home",
+    "about":    "Our Story",
+    "products": "Products",
+    "gallery":  "Gallery",
+    "contact":  "Contact",
+    "shop":     "Shop Bella",
+    "lang":     "عربي",
+    "instagram": "Instagram",
+    "ariaLangSwitch": "Switch language",
+    "ariaLogoHome": "Bella — Home",
+    "ariaPrimary": "Primary navigation",
+    "ariaMenuToggle": "Toggle menu"
+  },
+  "home": {
+    "hero": {
+      "eyebrow":   "Advanced Mesotherapy",
+      "headline":  "Science meets\nbeauty.",
+      "morph":     ["Precision.", "Innovation.", "Renewal.", "Bella."],
+      "cta":       "Explore Products",
+      "secondary": "Our Story",
+      "scroll":    "Scroll to discover"
+    },
+    "manifesto": {
+      "eyebrow":  "Our Belief",
+      "headline": "Your skin deserves the extraordinary.",
+      "p1":       "We believe beauty is not something you chase. It is something you reveal — layer by layer, with the right science and the right care.",
+      "p2":       "Bella is built on the principle that luxury should also be effective. Every drop in every vial carries decades of dermatological research distilled into a single promise: transformation you can see.",
+      "p3":       "This is not skincare. This is a ritual."
+    },
+    "stats": {
+      "satisfaction": "Client satisfaction",
+      "actives":      "Active ingredients",
+      "hydration":    "Hydration boost",
+      "additives":    "Harmful additives"
+    },
+    "products": {
+      "eyebrow":  "Our Formulations",
+      "headline": "Crafted with precision.",
+      "sub":      "Each Bella formula is built around a single mission: visible, lasting results.",
+      "viewAll":  "View all products"
+    },
+    "ingredients": {
+      "categories": {
+        "acid": "Acid",
+        "peptide": "Peptide",
+        "vitamin": "Vitamin",
+        "botanical": "Botanical",
+        "growth-factor": "Growth factor",
+        "lipid": "Lipid",
+        "active": "Active"
+      },
+      "eyebrow":  "The Science",
+      "headline": "Inside every vial.",
+      "sub":      "Each formula is built around ingredients with decades of peer-reviewed research. Nothing by chance. Everything by design.",
+      "concentration": "Concentration",
+      "cta":      "Explore the Science"
+    },
+    "benefits": {
+      "heading": "Why Bella",
+      "stats": [
+        { "suffix": "%", "label": "Client satisfaction" },
+        { "suffix": "+", "label": "Active ingredients" },
+        { "suffix": "h", "label": "Hydration boost" },
+        { "suffix": "",  "label": "Harmful additives" }
+      ],
+      "cards": [
+        { "numeral": "I",   "title": "Clinical Precision", "desc": "Every formula meets pharmaceutical-grade purity standards. Active concentrations are therapeutic, not decorative." },
+        { "numeral": "II",  "title": "Pure Actives",       "desc": "No fillers. No parabens. No unnecessary preservatives. Just the actives your skin needs, at the concentrations that work." },
+        { "numeral": "III", "title": "Visible Results",    "desc": "We measure success in hydration depth, brightening percentage, and visible lifting — not in feelings." }
+      ]
+    },
+    "howItWorks": {
+      "eyebrow":  "The Ritual",
+      "headline": "How it works.",
+      "steps": [
+        { "number": "01", "title": "Consultation",       "desc": "Your practitioner assesses your skin — texture, tone, depth of concerns — and designs a protocol unique to you.",   "duration": "30 min" },
+        { "number": "02", "title": "Protocol Design",    "desc": "The right Bella formula is selected for your skin diagnosis. Every active and concentration is chosen with intention.",  "duration": "15 min" },
+        { "number": "03", "title": "Treatment Session",  "desc": "Micro-injections deliver actives precisely where your skin needs them. Sessions are brief, precise, transformative.",  "duration": "45–60 min" },
+        { "number": "04", "title": "Skin Transformation","desc": "Results build session by session. Visible hydration, brightness, and firmness — the kind that doesn't wash off.", "duration": "2–4 weeks" }
+      ]
+    },
+    "testimonials": {
+      "eyebrow":  "Trusted by Professionals",
+      "headline": "Voices of transformation."
+    },
+    "cta": {
+      "eyebrow":   "Begin Your Ritual",
+      "headline":  "Ready to transform\nyour skin?",
+      "sub":       "Discover the Bella collection and begin your ritual.",
+      "primary":   "Shop Now",
+      "secondary": "Learn Our Story",
+      "philosophy":"Purity · Precision · Transformation"
+    },
+    "velocity": {
+      "words": ["PURITY", "PRECISION", "SCIENCE", "LUXURY", "BELLA", "RENEWAL", "RADIANCE", "TRANSFORM"]
+    },
+    "trustBar": {
+      "heading": "Why clinics trust Bella",
+      "items": [
+        "Trusted by 200+ clinics across Egypt & Gulf",
+        "Dermatologist recommended",
+        "Pharmaceutical-grade manufacturing",
+        "Available in 8+ countries",
+        "Zero harmful additives",
+        "Clinical-grade actives"
+      ]
+    },
+    "faq": {
+      "eyebrow":  "Questions",
+      "headline": "Everything you need to know.",
+      "items": [
+        {
+          "q": "What is mesotherapy?",
+          "a": "Mesotherapy is a minimally invasive technique involving micro-injections of active ingredients (vitamins, peptides, hyaluronic acid) directly into the skin's mesoderm layer. This targeted delivery bypasses the skin barrier, ensuring therapeutic concentrations reach exactly where they are needed."
+        },
+        {
+          "q": "Is mesotherapy painful?",
+          "a": "Most clients describe the sensation as a slight tingling or pressure. Sessions use ultra-fine needles (30–32G) and optional numbing cream. The discomfort is minimal and short-lived — far less than most people expect."
+        },
+        {
+          "q": "How many sessions do I need?",
+          "a": "A typical protocol is 4–6 sessions spaced 1–2 weeks apart for initial results, followed by monthly maintenance. Your practitioner will design a specific protocol based on your skin's response and goals."
+        },
+        {
+          "q": "How soon will I see results?",
+          "a": "Many clients notice improved radiance and hydration after the first 1–2 sessions. Deeper concerns (fine lines, pigmentation, laxity) show progressive improvement across 4–8 sessions as collagen synthesis and cellular renewal accelerate."
+        },
+        {
+          "q": "Are Bella formulas safe?",
+          "a": "Every Bella formula is manufactured under pharmaceutical-grade conditions with full traceability of every active ingredient. We use zero parabens, formaldehyde releasers, or synthetic fragrances. All products undergo stability and microbiological testing before release."
+        }
+      ]
+    }
+  },
+  "about": {
+    "hero": {
+      "eyebrow":  "Our Story",
+      "headline": "Born from a pursuit of\nperfection.",
+      "subtext": "Clinical precision, Egyptian origin, luxury ritual",
+      "scrollCta": "Scroll"
+    },
+    "stats": {
+      "aria": "Brand statistics",
+      "items": [
+        { "value": "98%", "label": "Client satisfaction" },
+        { "value": "12+", "label": "Active ingredients per formula" },
+        { "value": "48h", "label": "Visible hydration boost" },
+        { "value": "0", "label": "Harmful additives" }
+      ]
+    },
+    "story": {
+      "eyebrow":  "The Beginning",
+      "headline": "Where science met a vision.",
+      "p1":       "Bella was founded in Egypt with a singular belief: that the region's clients deserved access to the same precision formulations used in the world's most prestigious clinics.",
+      "p2":       "Our founders — a team of dermatologists and biochemists — spent three years developing formulations that meet clinical-grade standards while maintaining the ritual experience of luxury skincare.",
+      "p3":       "Today, Bella is trusted by aesthetic practitioners across Egypt and the Gulf, and used in clinics that set the benchmark for skin excellence.",
+      "established": "Est. 2024 · Egypt",
+      "signature": "Bella"
+    },
+    "founderQuote": {
+      "aria": "Founder quote",
+      "quote": "We created Bella for practitioners who refuse to choose between scientific discipline and a beautiful patient experience.",
+      "attribution": "Dr. Amira Hassan",
+      "role": "Co-Founder & Chief Scientist"
+    },
+    "values": {
+      "eyebrow":  "What Drives Us",
+      "headline": "Three principles. One standard.",
+      "purity": {
+        "title": "Purity",
+        "desc":  "Every ingredient is sourced, tested, and verified. No fillers, no compromises."
+      },
+      "precision": {
+        "title": "Precision",
+        "desc":  "Therapeutic concentrations, not cosmetic doses. Every formula is designed to perform."
+      },
+      "transformation": {
+        "title": "Transformation",
+        "desc":  "We measure success in visible results. Before and after, not promises."
+      }
+    },
+    "timeline": {
+      "eyebrow": "Our Path",
+      "headline": "A standard built patiently.",
+      "items": [
+        { "year": "2021", "title": "The Origin", "description": "A research brief began in Cairo around one question: what would regional mesotherapy look like if it were built without compromise?" },
+        { "year": "2022", "title": "Clinical Formulation", "description": "Dermatology, biochemistry, and pharmaceutical sourcing came together to refine active concentrations and delivery logic." },
+        { "year": "2024", "title": "Bella Launches", "description": "The first Bella formulas entered professional use with a visual identity shaped for medical luxury." },
+        { "year": "Today", "title": "Regional Trust", "description": "Bella is used by practitioners across Egypt and the Gulf, with a growing protocol library for clinics." }
+      ]
+    },
+    "science": {
+      "eyebrow": "The Science",
+      "headline": "Powered by actives with purpose.",
+      "subtext": "The formulas are centered on ingredients chosen for delivery, concentration, and visible skin performance."
+    },
+    "testimonials": {
+      "eyebrow": "Professional Trust",
+      "headline": "What practitioners notice first."
+    },
+    "certifications": {
+      "eyebrow": "Clinical Confidence",
+      "items": [
+        { "label": "GMP aligned" },
+        { "label": "Pharma grade" },
+        { "label": "Derm tested" },
+        { "label": "Global supply" },
+        { "label": "Clinical use" }
+      ]
+    },
+    "team": {
+      "eyebrow":  "The Minds Behind Bella",
+      "headline": "Expertise you can trust."
+    },
+    "cta": {
+      "eyebrow": "Begin Your Ritual",
+      "headline": "Ready to transform\nyour skin?",
+      "subtext": "Explore the Bella collection and find the formulation that fits your next protocol.",
+      "primary": "Shop Now",
+      "secondary": "View Products"
+    }
+  },
+  "products": {
+    "hero": {
+      "eyebrow":  "The Collection",
+      "headline": "Formulations for every skin story.",
+      "subtitle": "{count} Luxury Mesotherapy Formulations"
+    },
+    "filter": {
+      "all":            "All",
+      "skinBooster":    "Skin Booster",
+      "brightening":    "Brightening",
+      "firming":        "Firming",
+      "antiAcne":       "Anti-Acne",
+      "hairCare":       "Hair Care",
+      "bodyContouring": "Body Contouring",
+      "lipCare":        "Lip Care",
+      "eyeCare":        "Eye Care",
+      "scarTreatment":  "Scar Treatment"
+    },
+    "noProducts": "No products found",
+    "card": {
+      "learnMore": "Learn more",
+      "sessions":  "Recommended sessions",
+      "productSingular": "product",
+      "productPlural": "products",
+      "keyBenefits": "Key benefits",
+      "keyIngredients": "Key Ingredients",
+      "showCount": "Showing {count} of {total} products"
+    },
+    "ingredients": {
+      "sectionEyebrow": "Signature Ingredients",
+      "sectionTitle": "Science Meets Luxury",
+      "sectionSubtitle": "Pure, meticulously sourced active compounds"
+    },
+    "cta": {
+      "eyebrow": "Experience Bella",
+      "title": "Book Your Consultation",
+      "description": "Let our specialists guide you to your perfect Bella formula",
+      "button": "Book Now"
+    },
+    "single": {
+      "keyBenefits": "Key Benefits",
+      "howItWorks": "How it Works",
+      "ingredients": "Key Ingredients",
+      "recommended": "Recommended Protocol",
+      "backToProducts": "Back to Products",
+      "shopNow": "Buy Now",
+      "bookNow": "Book Now",
+      "bookingTitle": "Book a Session",
+      "bookingSubtitle": "Fill in your details and we'll get back to you shortly",
+      "nameLabel": "Full Name",
+      "emailLabel": "Email Address",
+      "phoneLabel": "Phone Number",
+      "namePlaceholder": "Your full name",
+      "emailPlaceholder": "your@email.com",
+      "phonePlaceholder": "+20 10 0000 0000",
+      "submitBooking": "Send Request",
+      "bookingSuccess": "Your request has been sent! We'll contact you soon.",
+      "bookingError": "Something went wrong. Please try again.",
+      "sending": "Sending...",
+      "close": "Close",
+      "learnMore": "Learn More",
+      "sessions": "sessions",
+      "concentration": "Concentration",
+      "howToUse": "How To Use",
+      "step": "Step",
+      "clinicalStats": "Clinical Standards",
+      "clinicalSubtitle": "Measured details behind every professional Bella protocol",
+      "relatedProducts": "Explore More",
+      "relatedSubtitle": "Discover the full Bella mesotherapy collection",
+      "viewProduct": "View Product",
+      "scrollToExplore": "Scroll to explore",
+      "professionalUse": "Professional Use Information",
+      "techniques": "Application techniques",
+      "warnings": "Warnings & Precautions",
+      "storage": "Storage"
+    }
+  },
+  "gallery": {
+    "meta": {
+      "title": "Gallery | Bella",
+      "description": "Explore the Bella mesotherapy product collection: 13 precision-formulated vials crafted for luminous, healthy skin."
+    },
+    "hero": {
+      "eyebrow": "Our Collection",
+      "headline": "Beauty, Crafted\nwith Science.",
+      "subheadline": "13 precision-formulated mesotherapy vials.",
+      "heroProducts": "Signature Products"
+    },
+    "filters": {
+      "all": "All Products",
+      "boosters": "Skin Boosters",
+      "treatments": "Treatments",
+      "specialists": "Specialists"
+    },
+    "grid": {
+      "showing": "Showing {count} products",
+      "noResults": "No products in this category."
+    },
+    "card": {
+      "viewProduct": "View Product",
+      "openImage": "Open full image"
+    },
+    "lightbox": {
+      "close": "Close",
+      "previous": "Previous image",
+      "next": "Next image",
+      "thumbnails": "Thumbnails",
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out"
+    },
+    "marquee": {
+      "label": "All Products"
+    }
+  },
+  "contact": {
+    "hero": {
+      "eyebrow":  "Get in Touch",
+      "headline": "We would love to\nhear from you."
+    },
+    "form": {
+      "name":        "Full Name",
+      "email":       "Email Address",
+      "phone":       "Phone Number",
+      "subject":     "Subject",
+      "message":     "Your Message",
+      "submit":      "Send Message",
+      "success":     "Message sent! We'll be in touch within 24 hours.",
+      "error":       "Something went wrong. Please try again.",
+      "sending":     "Sending...",
+      "subjectPlaceholder": "What can we help you with?",
+      "placeholder": {
+        "name":    "Sarah Ahmed",
+        "email":   "sarah@example.com",
+        "phone":   "+20 100 000 0000",
+        "message": "Tell us how we can help..."
+      }
+    },
+    "meta": {
+      "title": "Contact Us",
+      "description": "Get in touch with the Bella team. Book a session, ask about our products, or simply say hello."
+    },
+    "info": {
+      "title":     "Contact Information",
+      "email":     "hello@bella-meso.com",
+      "instagram": "@bella_meso",
+      "hours":     "Sunday – Thursday, 9am – 6pm",
+      "phone": "Phone",
+      "facebook": "Facebook",
+      "facebookHandle": "Bella Mesotherapy",
+      "whatsapp": "WhatsApp",
+      "phoneNumber": "+20 109 079 7965",
+      "whatsappNumber": "+20 109 079 7965",
+      "whatsappCta": "Chat on WhatsApp"
+    }
+  },
+  "footer": {
+    "tagline": "Where science meets beauty.",
+    "shopHeading": "Shop",
+    "allProducts": "All products",
+    "navigateHeading": "Navigate",
+    "connectHeading": "Connect",
+    "newsletterHeading": "Join the list",
+    "newsletterPlaceholder": "Your email",
+    "newsletterButton": "Subscribe",
+    "newsletterSuccess": "You're on the list.",
+    "origin": "Egypt",
+    "instagram": "Instagram",
+    "copyrightName": "Bella Mesotherapy.",
+    "rights": "All rights reserved.",
+    "philosophy": "Purity. Precision. Transformation."
+  }
+}
