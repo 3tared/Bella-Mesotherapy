@@ -12,6 +12,7 @@ import { BlurText }              from "@/components/ui/blur-text";
 import { MorphingText }          from "@/components/ui/morphing-text";
 import { MagneticHover }         from "@/components/ui/MagneticButton";
 import { useMediaQuery }         from "@/hooks/useMediaQuery";
+import { ItalyBadge }            from "@/components/ui/ItalyBadge";
 
 const Particles = dynamic(
   () => import("@/components/ui/particles").then((module) => module.Particles),
@@ -197,6 +198,17 @@ export function HeroSection() {
           >
             {t("secondary")}
           </Link>
+        </motion.div>
+
+        {/* Italian Formula badge — static entrance after CTAs */}
+        <motion.div
+          initial={revealInitial ?? { opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 1.35, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="mt-6 flex justify-center"
+          style={{ minHeight: "28px" }}
+        >
+          <ItalyBadge variant="inline" tone="dark" />
         </motion.div>
       </div>
 

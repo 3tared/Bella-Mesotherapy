@@ -16,6 +16,7 @@ import { SectionWrapper } from "@/components/ui/SectionWrapper";
 import { brand } from "@/data/brand";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "";
 
@@ -393,6 +394,9 @@ export function ContactFormSection() {
             <p className="mt-4 text-xs uppercase tracking-widest text-bella-stone">
               &mdash; The Bella Team
             </p>
+            <div className="mt-4">
+              <ItalyBadge variant="inline" tone="light" />
+            </div>
           </div>
         </motion.div>
       </div>

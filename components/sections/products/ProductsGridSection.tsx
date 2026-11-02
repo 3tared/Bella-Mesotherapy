@@ -14,6 +14,7 @@ import {
   type Locale,
 } from '@/data';
 import { ProductImage } from '@/components/ui/ProductImage';
+import { ItalyBadge } from '@/components/ui/ItalyBadge';
 
 type FilterKey = ProductCategory | 'all';
 
@@ -414,6 +415,10 @@ function ProductCard({
               background: 'linear-gradient(138deg, rgba(255,255,255,0.10) 0%, transparent 48%, rgba(255,255,255,0.04) 100%)',
             }}
           />
+          {/* Italian Formula chip — hides when ingredient overlay appears */}
+          <div className="absolute bottom-3 start-3 z-[5] group-hover:opacity-0 transition-opacity duration-300">
+            <ItalyBadge variant="chip" />
+          </div>
         </div>
 
         <div className="flex-1 flex flex-col p-3 ps-5 sm:p-6 sm:ps-8">

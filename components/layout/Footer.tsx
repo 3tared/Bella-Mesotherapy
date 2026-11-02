@@ -12,6 +12,7 @@ import {
   type Locale,
 } from "@/data/products";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 const navigateLinks = NAV_ALL.filter((item) => item.key !== "products");
 
@@ -69,6 +70,9 @@ export function Footer() {
       <p className="mt-3 max-w-xs text-sm leading-relaxed text-white/40">
         {t("tagline")}
       </p>
+      <div className="mt-4">
+        <ItalyBadge variant="pill" tone="dark" />
+      </div>
       <p className="mt-6 text-xs uppercase tracking-[0.2em] text-bella-gold/60">
         {t("origin")} · <span dir="ltr">{brand.founded}</span>
       </p>

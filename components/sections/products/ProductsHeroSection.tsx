@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useTranslations } from 'next-intl';
 import { products } from '@/data';
+import { ItalyBadge } from '@/components/ui/ItalyBadge';
 
 export default function ProductsHeroSection() {
   const t = useTranslations('products');
@@ -95,6 +96,15 @@ export default function ProductsHeroSection() {
         >
           {t('hero.subtitle', { count: totalProducts })}
         </motion.p>
+
+        <motion.div
+          initial={{ opacity: 0, y: 8 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.82, ease: [0.25, 0.46, 0.45, 0.94] }}
+          className="mt-5 flex justify-center"
+        >
+          <ItalyBadge variant="pill" tone="light" />
+        </motion.div>
       </div>
 
       {/* Top gradient - ensures navbar text remains legible over warm hero bg */}

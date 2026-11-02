@@ -9,6 +9,7 @@ import {
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 interface BookingModalProps {
   isOpen: boolean;
@@ -149,6 +150,9 @@ export default function BookingModal({
               <p className="text-sm text-bella-stone/70">
                 {t("bookingSubtitle")}
               </p>
+              <div className="mt-3">
+                <ItalyBadge variant="inline" tone="light" />
+              </div>
               <div className="mt-3 inline-flex items-center gap-2 rounded-full border border-bella-gold/25 bg-bella-gold/10 px-3 py-1">
                 <span className="text-xs text-bella-gold" aria-hidden="true">
                   Bella

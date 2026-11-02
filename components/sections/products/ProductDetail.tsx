@@ -24,6 +24,7 @@ import { Particles } from "@/components/ui/particles";
 import { BlurFade } from "@/components/ui/blur-fade";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 export function ProductDetail({ product: rawProduct }: { product: Product }) {
   const t = useTranslations("products.single");
@@ -205,6 +206,10 @@ export function ProductDetail({ product: rawProduct }: { product: Product }) {
                       {product.sessions}
                     </span>
                   )}
+                  <span className={cn("flex items-center gap-1.5", isRTL && "flex-row-reverse")}>
+                    <span className="text-bella-gold">◆</span>
+                    <ItalyBadge variant="inline" tone="light" />
+                  </span>
                 </div>
               </BlurFade>
 
@@ -516,6 +521,10 @@ export function ProductDetail({ product: rawProduct }: { product: Product }) {
                             className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                             sizes="(max-width: 1024px) 100vw, 33vw"
                           />
+                          {/* Italian Formula chip */}
+                          <div className="absolute bottom-3 start-3 z-10">
+                            <ItalyBadge variant="chip" />
+                          </div>
                         </div>
                       </CardItem>
 

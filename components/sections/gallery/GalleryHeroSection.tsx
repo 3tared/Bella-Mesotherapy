@@ -6,6 +6,7 @@ import { motion, useInView, useReducedMotion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
 import { galleryItems, getFeaturedItems } from "@/data/gallery";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 const featuredItems = getFeaturedItems(galleryItems);
 
@@ -70,6 +71,15 @@ export function GalleryHeroSection() {
               isArabic && "origin-right lg:ms-auto",
             )}
           />
+
+          <motion.div
+            initial={{ opacity: 0, y: 8 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.85 }}
+            className={cn("mt-5", isArabic && "lg:text-right")}
+          >
+            <ItalyBadge variant="pill" tone="dark" />
+          </motion.div>
         </div>
 
         <motion.div

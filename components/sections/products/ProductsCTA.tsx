@@ -3,6 +3,7 @@
 import { AnimatePresence, motion, useInView } from 'framer-motion';
 import { useCallback, useEffect, useRef, useState, type ChangeEvent, type CSSProperties, type FormEvent } from 'react';
 import { useLocale, useTranslations } from 'next-intl';
+import { ItalyBadge } from '@/components/ui/ItalyBadge';
 
 const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORMSPREE_FORM_ID';
 
@@ -170,6 +171,15 @@ export default function ProductsCTA() {
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="mb-5 flex justify-center"
+          >
+            <ItalyBadge variant="inline" tone="light" />
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 10 }}
+            animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 10 }}
             transition={{ duration: 0.6, delay: 0.55 }}
           >
             <motion.button
@@ -235,6 +245,9 @@ export default function ProductsCTA() {
                     >
                       {ui.modalTitle}
                     </h2>
+                    <div className="mt-3 hidden sm:block">
+                      <ItalyBadge variant="inline" tone="dark" />
+                    </div>
                     <div className="hidden sm:block w-8 h-px mb-5" style={{ background: 'rgba(201,169,110,0.5)' }} />
                     <p className="hidden sm:block text-white/40 text-[12px] leading-relaxed font-light">
                       {ui.modalSubtitle}

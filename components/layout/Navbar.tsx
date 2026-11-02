@@ -14,6 +14,7 @@ import {
 } from "@/data/navigation";
 import { cn } from "@/lib/utils";
 import { useTheme } from "@/components/providers/ThemeProvider";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 function NavLink({
   href,
@@ -367,6 +368,20 @@ export function Navbar() {
                 >
                   {t("instagram")}
                 </a>
+              </motion.div>
+
+              {/* Italian Formula badge at bottom of mobile menu */}
+              <motion.div
+                initial={{ opacity: 0, y: 12 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0 }}
+                transition={{ delay: 0.5, duration: 0.4 }}
+                className={cn(
+                  "mt-6 flex",
+                  isRTL ? "justify-end" : "justify-start",
+                )}
+              >
+                <ItalyBadge variant="inline" tone="light" />
               </motion.div>
             </div>
           </motion.div>

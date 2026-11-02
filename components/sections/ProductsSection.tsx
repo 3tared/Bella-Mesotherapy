@@ -14,6 +14,7 @@ import { DirectionArrow }     from "@/components/ui/DirectionArrow";
 import { staggerContainer, cardReveal, fadeUp } from "@/lib/animations";
 import { featuredProducts, getLocalizedProduct }   from "@/data/products";
 import type { Locale, ProductCategory } from "@/data/products";
+import { ItalyBadge }         from "@/components/ui/ItalyBadge";
 
 type LocalizedProduct = ReturnType<typeof getLocalizedProduct>;
 
@@ -89,6 +90,10 @@ function ProductCard3D({
                 >
                   {tCategory(PRODUCT_CATEGORY_KEYS[product.category])}
                 </span>
+              </div>
+              {/* Italian Formula chip */}
+              <div className="absolute bottom-3 start-3 z-10 group-hover:opacity-0 transition-opacity duration-300">
+                <ItalyBadge variant="chip" />
               </div>
             </div>
           </CardItem>

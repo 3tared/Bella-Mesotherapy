@@ -12,6 +12,7 @@ import { AnimatedShinyText } from "@/components/ui/animated-shiny-text";
 import { BlurText } from "@/components/ui/blur-text";
 import { Particles } from "@/components/ui/particles";
 import { cn } from "@/lib/utils";
+import { ItalyBadge } from "@/components/ui/ItalyBadge";
 
 export function AboutHeroSection() {
   const t = useTranslations("about.hero");
@@ -118,6 +119,13 @@ export function AboutHeroSection() {
         >
           {t("subtext")}
         </motion.p>
+
+        <motion.div
+          {...reveal(1.2)}
+          className="mt-6 flex justify-center"
+        >
+          <ItalyBadge variant="pill" tone="dark" />
+        </motion.div>
       </motion.div>
 
       <motion.div
