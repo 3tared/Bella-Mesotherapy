@@ -1,7 +1,7 @@
 {
   "metadata": {
     "title": "Bella | Luxury Mesotherapy",
-    "description": "Advanced mesotherapy formulations crafted for transformative skin renewal. Trusted by dermatologists across Egypt and the Gulf.",
+    "description": "Advanced mesotherapy formulations crafted for transformative skin renewal. Trusted by dermatologists across Italy and the Gulf.",
     "productsTitle": "Products | Bella Mesotherapy",
     "productsDescription": "13 precision-formulated mesotherapy solutions for every skin concern.",
     "ogAlt": "Bella luxury mesotherapy",
@@ -110,7 +110,7 @@
     "trustBar": {
       "heading": "Why clinics trust Bella",
       "items": [
-        "Trusted by 200+ clinics across Egypt & Gulf",
+        "Trusted by 200+ clinics across Italy & Gulf",
         "Dermatologist recommended",
         "Pharmaceutical-grade manufacturing",
         "Available in 8+ countries",
@@ -149,7 +149,7 @@
     "hero": {
       "eyebrow":  "Our Story",
       "headline": "Born from a pursuit of\nperfection.",
-      "subtext": "Clinical precision, Egyptian origin, luxury ritual",
+      "subtext": "Clinical precision, Italian formula, luxury ritual",
       "scrollCta": "Scroll"
     },
     "stats": {
@@ -164,10 +164,10 @@
     "story": {
       "eyebrow":  "The Beginning",
       "headline": "Where science met a vision.",
-      "p1":       "Bella was founded in Egypt with a singular belief: that the region's clients deserved access to the same precision formulations used in the world's most prestigious clinics.",
+      "p1":       "Bella was founded in Italy with a singular belief: that the region's clients deserved access to the same precision formulations used in the world's most prestigious clinics.",
       "p2":       "Our founders — a team of dermatologists and biochemists — spent three years developing formulations that meet clinical-grade standards while maintaining the ritual experience of luxury skincare.",
-      "p3":       "Today, Bella is trusted by aesthetic practitioners across Egypt and the Gulf, and used in clinics that set the benchmark for skin excellence.",
-      "established": "Est. 2024 · Egypt",
+      "p3":       "Today, Bella is trusted by aesthetic practitioners across Italy and the Gulf, and used in clinics that set the benchmark for skin excellence.",
+      "established": "Est. 2024 · Italy",
       "signature": "Bella"
     },
     "founderQuote": {
@@ -196,10 +196,10 @@
       "eyebrow": "Our Path",
       "headline": "A standard built patiently.",
       "items": [
-        { "year": "2021", "title": "The Origin", "description": "A research brief began in Cairo around one question: what would regional mesotherapy look like if it were built without compromise?" },
+        { "year": "2021", "title": "The Origin", "description": "A research brief began in Rome around one question: what would regional mesotherapy look like if it were built without compromise?" },
         { "year": "2022", "title": "Clinical Formulation", "description": "Dermatology, biochemistry, and pharmaceutical sourcing came together to refine active concentrations and delivery logic." },
         { "year": "2024", "title": "Bella Launches", "description": "The first Bella formulas entered professional use with a visual identity shaped for medical luxury." },
-        { "year": "Today", "title": "Regional Trust", "description": "Bella is used by practitioners across Egypt and the Gulf, with a growing protocol library for clinics." }
+        { "year": "Today", "title": "Regional Trust", "description": "Bella is used by practitioners across Italy and the Gulf, with a growing protocol library for clinics." }
       ]
     },
     "science": {
@@ -385,7 +385,9 @@
       "whatsapp": "WhatsApp",
       "phoneNumber": "+20 109 079 7965",
       "whatsappNumber": "+20 109 079 7965",
-      "whatsappCta": "Chat on WhatsApp"
+      "whatsappCta": "Chat on WhatsApp",
+      "address": "Address",
+      "openInMaps": "Open in Maps"
     }
   },
   "footer": {
@@ -398,7 +400,6 @@
     "newsletterPlaceholder": "Your email",
     "newsletterButton": "Subscribe",
     "newsletterSuccess": "You're on the list.",
-    "origin": "Egypt",
     "instagram": "Instagram",
     "copyrightName": "Bella Mesotherapy.",
     "rights": "All rights reserved.",

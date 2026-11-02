@@ -13,6 +13,7 @@ import {
 } from "@/data/products";
 import { cn } from "@/lib/utils";
 import { ItalyBadge } from "@/components/ui/ItalyBadge";
+import { BrandAddress } from "@/components/ui/BrandAddress";
 
 const navigateLinks = NAV_ALL.filter((item) => item.key !== "products");
 
@@ -73,9 +74,9 @@ export function Footer() {
       <div className="mt-4">
         <ItalyBadge variant="pill" tone="dark" />
       </div>
-      <p className="mt-6 text-xs uppercase tracking-[0.2em] text-bella-gold/60">
-        {t("origin")} · <span dir="ltr">{brand.founded}</span>
-      </p>
+      <div className="mt-6 text-xs uppercase tracking-[0.2em] text-bella-gold/60">
+        <BrandAddress variant="lines" />
+      </div>
     </div>
   );
 

@@ -4,8 +4,21 @@ export const brand = {
   subtitle:    "Advanced mesotherapy formulations",
   description: "Bella is born from a belief that radiant skin is the intersection of cutting-edge science and nature's most powerful actives. Each formulation is precision-crafted for visible, lasting transformation.",
   founded:     "2024",
-  origin:      "Egypt",
   philosophy:  "Purity. Precision. Transformation.",
+
+  address: {
+    street: "Via Romeo Romei, 27",
+    postalCode: "00136",
+    city: "Roma",
+    region: "RM",
+    country: "Italy",
+    countryCode: "IT",
+    full: "Via Romeo Romei, 27, 00136 Roma RM, Italy",
+    short: "Roma, Italy",
+    mapsUrl:
+      "https://www.google.com/maps/search/?api=1&query=" +
+      encodeURIComponent("Via Romeo Romei, 27, 00136 Roma RM, Italy"),
+  },
   
   stats: [
     { value: "98%",  label: "Client satisfaction" },
@@ -22,3 +35,6 @@ export const brand = {
   whatsapp:  "+201090797965",
   whatsappUrl: "https://wa.me/201090797965",
 } as const;
+
+export type Brand = typeof brand;
+

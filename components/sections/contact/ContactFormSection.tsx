@@ -17,6 +17,7 @@ import { brand } from "@/data/brand";
 import { fadeUp } from "@/lib/animations";
 import { cn } from "@/lib/utils";
 import { ItalyBadge } from "@/components/ui/ItalyBadge";
+import { BrandAddress } from "@/components/ui/BrandAddress";
 
 const FORMSPREE_ENDPOINT = process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT ?? "";
 
@@ -383,6 +384,46 @@ export function ContactFormSection() {
                   </p>
                 </div>
               </a>
+
+              {/* Address */}
+              <div className={cn("flex items-start gap-4", isRTL && "flex-row-reverse")}>
+                <div className="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-full border border-bella-gold/20 bg-bella-gold/5">
+                  <svg
+                    width="18"
+                    height="18"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-bella-gold/70"
+                    aria-hidden="true"
+                  >
+                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z" />
+                    <circle cx="12" cy="10" r="3" />
+                  </svg>
+                </div>
+                <div className={cn(isRTL && "text-right")}>
+                  <p className="mb-0.5 text-xs uppercase tracking-[0.15em] text-bella-stone/50 rtl:tracking-normal rtl:normal-case">
+                    {t("info.address")}
+                  </p>
+                  <BrandAddress
+                    variant="lines"
+                    className="text-sm font-medium text-bella-charcoal dark:text-bella-ivory"
+                  />
+                  <p className="mt-1 text-xs text-bella-gold/70 rtl:tracking-normal">
+                    <a
+                      href={brand.address.mapsUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors duration-300 hover:text-bella-gold"
+                    >
+                      {t("info.openInMaps")} {isRTL ? "←" : "→"}
+                    </a>
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
 
